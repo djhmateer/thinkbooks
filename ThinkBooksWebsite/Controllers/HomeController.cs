@@ -10,6 +10,11 @@ namespace ThinkBooksWebsite.Controllers
     {
         public ActionResult Index()
         {
+            String userAgent;
+            userAgent = Request.UserAgent;
+
+            ViewBag.UserAgent = userAgent;
+
             return View();
         }
 

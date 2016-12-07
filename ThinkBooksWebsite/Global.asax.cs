@@ -12,6 +12,9 @@ namespace ThinkBooksWebsite
     {
         protected void Application_Start()
         {
+            //https://www.troyhunt.com/shhh-dont-let-your-response-headers/
+            MvcHandler.DisableMvcResponseHeader = true;
+
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
