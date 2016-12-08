@@ -181,6 +181,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\amelia-bootstrap.min.css" />
+    <Content Include="Content\bootstrap.min300.css" />
+    <Content Include="Content\lumen-bootstrap-theme-min.css" />
     <Content Include="Content\flatly-bootstrap-theme-min.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme-ORIG.min.css" />
