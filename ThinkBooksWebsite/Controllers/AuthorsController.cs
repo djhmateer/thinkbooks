@@ -15,9 +15,9 @@ namespace ThinkBooksWebsite.Controllers
         public ActionResult Index(string sortColumnAndDirection = "AuthorID", string currentSortOrder = "AuthorID", int page = 1, int currentPage = 1, int? authorIDFilter = null, string firstNameFilter = null, 
             string lastNameFilter = null, DateTime? dateOfBirthFilter = null, string results = "50")
         {
-            String userAgent;
-            userAgent = Request.UserAgent;
-            ViewBag.UserAgent = userAgent;
+            //String userAgent;
+            //userAgent = Request.UserAgent;
+            //ViewBag.UserAgent = userAgent;
 
 
             // clicked on next or previous button, so keep the sortOrder. 
