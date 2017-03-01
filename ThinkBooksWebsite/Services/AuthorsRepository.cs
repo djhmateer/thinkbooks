@@ -211,12 +211,14 @@ namespace ThinkBooksWebsite.Services
                 {
                     c.Execute("ALTER TABLE [dbo].[Book] DROP CONSTRAINT [FK_Book_Author]");
                     c.Execute("ALTER TABLE [dbo].[Author] DROP CONSTRAINT [FK_Author_AuthorStatus]");
+
+                    c.Execute("TRUNCATE TABLE Author;");
+                    c.Execute("TRUNCATE TABLE Book;");
+                    c.Execute("TRUNCATE TABLE AuthorStatus;");
                 }
                 catch { }
 
-                c.Execute("TRUNCATE TABLE Author;");
-                c.Execute("TRUNCATE TABLE Book;");
-                c.Execute("TRUNCATE TABLE AuthorStatus;");
+                
             }
         }
 
